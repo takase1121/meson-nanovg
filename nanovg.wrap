@@ -1,4 +1,0 @@
-[wrap-git]
-directory = nanovg
-url = https://github.com/meson-librarie/nanovg.git
-revision = head
