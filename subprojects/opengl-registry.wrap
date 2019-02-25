@@ -1,0 +1,4 @@
+[wrap-git]
+directory = opengl-registry
+url = https://github.com/meson-library/OpenGL-Registry.git
+revision = head
