@@ -1,4 +1,4 @@
 [wrap-git]
 directory = nanovg
-url = https://github.com/meson-library/nanovg.git
+url = https://github.com/takase1121/meson-nanovg.git
 revision = unversioned_version
