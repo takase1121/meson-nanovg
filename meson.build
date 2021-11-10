@@ -3,9 +3,6 @@ project('nanovg', ['c'],
          license       : ['ZLIB'],
          meson_version : '>= 0.49.0')
 
-
-
-
 name = 'nanovg'
 
 
@@ -25,20 +22,6 @@ sources   = []
 c_args    = []
 link_args = []
 
-
-
-
-if system not in ['windows']
-    error('Script (meson.build) not prepared for your platform yet.')
-endif
-
-if system == 'windows' and cc_id not in ['msvc']
-    error('Script (meson.build) not prepared for your compiler yet.')
-endif
-
-
-
-
 include = include_directories('src')
 
 sources = ['src/fontstash.h',
@@ -49,10 +32,7 @@ sources = ['src/fontstash.h',
            'src/stb_image.h',
            'src/stb_truetype.h']
 
-c_args    = ['-D_CRT_SECURE_NO_WARNINGS']
-
-
-
+c_args    = ['-D_CRT_SECURE_NO_WARNINGS', '-DFONS_USE_FREETYPE']
   
 static_lib_name        = name
 static_lib_name_prefix = []
